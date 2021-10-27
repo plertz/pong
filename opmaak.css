@@ -1,0 +1,160 @@
+*{
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+html, body{
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+}
+
+.field{
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      cursor: none;
+}
+
+.stand{
+      color: white;
+      display: inline-block;
+}
+
+.stand p{
+        float: left;
+        font-size: 24pt;
+}
+
+.bat1{
+     position: absolute;
+     left: 50px;
+     width: 50px;
+     height: 200px;
+     background-color: white;
+}
+
+.bat2{
+     width: 50px;
+     height: 200px;
+     position: absolute;
+     right: 50px;
+     background-color: white;
+     float: right;
+}
+
+.ball{
+     position: absolute;
+     background-color: white;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     top: 0;
+     left: 0;
+}
+
+.game-over{
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          position: fixed;
+          top: 0;
+          left: 0;
+          backdrop-filter: blur(5px);
+          display: none;
+          cursor: default;
+}
+
+.options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+}
+
+.options button{
+              display: block;
+              width: 500px;
+              font-size: 64pt;
+              background-color: black;
+              color: white;
+              border: 3px solid white;
+              border-radius: 12px;
+              cursor: pointer;
+}
+
+.options button:focus{
+                     outline: none;
+}
+
+.options button:active{
+                      background-color: grey;
+}
+
+.options button a{
+                 text-decoration: none;
+                 color: white;
+}
+
+.content{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+}
+
+.menu{
+     width: 500px;
+     height: 250px;
+     border: 3px solid white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     border-radius: 12px;
+     box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
+}
+
+.wrap{
+     display: inline-block;
+}
+
+.menu h1{
+        color: white;
+        font-size: 64pt;
+}
+
+.menu button{
+            display: block;
+            color: white;
+            background-color: black;
+            font-size: 32pt;
+            border: 3px solid white;
+            border-radius: 22px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 5px;
+            box-shadow: 0 11px rgba(255, 255, 255, 0.4);
+}
+
+.menu button:focus{
+                  outline: none;
+}
+
+.menu button:active{
+                   box-shadow: 0 8px rgba(255, 255, 255, 0.1);
+                   transform: translateY(4px);
+}
+
+.menu button a{
+              text-decoration: none;
+              color: white;
+}
